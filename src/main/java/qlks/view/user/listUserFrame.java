@@ -45,11 +45,14 @@ public class listUserFrame extends javax.swing.JFrame {
         jButton1.setText("Check out");
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 200, 60));
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/qlks/img/Actions-contact-new-icon (1).png"))); // NOI18N
         jButton2.setText("Thêm khách hàng");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 100, 200, 60));
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/qlks/img/edit-file-icon.png"))); // NOI18N
         jButton3.setText("Sửa thông tin");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -58,19 +61,18 @@ public class listUserFrame extends javax.swing.JFrame {
         });
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 100, 200, 60));
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/qlks/img/Actions-view-sort-ascending-icon.png"))); // NOI18N
         jButton4.setText("Xóa thông tin");
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 100, 200, 60));
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 100, 200, 60));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "Name", "Address", "Phone", "Room", "Sex"
             }
         ));
         jScrollPane2.setViewportView(jTable1);
@@ -83,7 +85,14 @@ public class listUserFrame extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+        editUserFrame list = new editUserFrame();
+        list.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        newCustomer customer = new newCustomer();
+        customer.setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments

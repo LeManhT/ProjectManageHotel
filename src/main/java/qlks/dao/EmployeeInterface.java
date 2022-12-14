@@ -10,13 +10,10 @@ import java.util.ArrayList;
  *
  * @author Le Manh
  */
-public interface daoInterface <T> {
-    // User
-       public int addUser(T t);
-    public int updateUser(T t);
-    public int deleteUser(T t);
-    public ArrayList<T> selectAllUsers();
-    public T selectUserById(T t);
-
-
+public interface EmployeeInterface <Em> {
+    //       Employee 
+    public int addEmployee(Em em);
+    public int updateEnployee(Em em);
+    public int deleteEmployee (Em em);
+    public ArrayList<Em> selectAllEmployees(Em em);
 }
