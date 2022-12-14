@@ -10,13 +10,11 @@ import java.util.ArrayList;
  *
  * @author Le Manh
  */
-public interface daoInterface <T> {
-    // User
-       public int addUser(T t);
-    public int updateUser(T t);
-    public int deleteUser(T t);
-    public ArrayList<T> selectAllUsers();
-    public T selectUserById(T t);
-
-
+public interface roomInterface <R> {
+    //   Room
+    public int addRoom(R r);
+    public int updateRoom(R r);
+    public int deleteRoom(R r);
+    public ArrayList<R> selectAllRooms(R r);
+    public R selectRoomByUserID(R r);
 }

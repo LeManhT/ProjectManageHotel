@@ -64,5 +64,8 @@ public class ConnectDB {
             e.printStackTrace();
         }
     }
-    
+//    public static void main(String[] args) {
+//        ConnectDB con = new ConnectDB();
+//        con.getConnection();
+//    }
 }
