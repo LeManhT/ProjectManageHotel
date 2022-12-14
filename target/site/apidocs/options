@@ -1,0 +1,24 @@
+-classpath
+'C:/Users/LongVu/.m2/repository/unknown/binary/AbsoluteLayout/SNAPSHOT/AbsoluteLayout-SNAPSHOT.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'19'
+-sourcepath
+'D:/Project/ProjectManageHotel/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2022. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'D:/Project/ProjectManageHotel/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'ProjectManageHotel 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'ProjectManageHotel 1.0-SNAPSHOT API'
